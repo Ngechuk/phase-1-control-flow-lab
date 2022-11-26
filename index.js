@@ -8,11 +8,22 @@ function scuberGreetingForFeet(ride){
   }
 } // Write your code here!
 
-
-function ternaryCheckCity(){
+function ternaryCheckCity(city) {
   // Write your code here!
+  return city === "NYC" ? "Ok, sounds good." : "No go.";
 }
 
-function switchOnCharmFromTip(){
+
+function switchOnCharmFromTip(tip) {
   // Write your code here!
+  if (tip === "generous") {
+    return "Thank you so much.";
+  } else if (tip === "not as generous") {
+    return "Thank you.";
+  } else {
+    return "Bye."
+  }
+
 }
+
+console.log(switchOnCharmFromTip("generous"));
